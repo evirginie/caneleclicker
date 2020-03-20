@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>CaneleClicker</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/new.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Neucha|Pacifico"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container app">
+      <div class="row">
+        <h1>BouchonsClickers</h1>
+        <div class="image-cadre">
+          <img src="src/canele.jpg" />
+        </div>
+        <p class="elem">You have <span id="number">0</span> Canelés.</p>
+        <div class="col-4 elem">
+          <img onclick="bake()" class="clicky" src="src/canele-icon.png" />
+        </div>
+        <div class="col-4 elem">
+          <button
+            class="btn btn-block btn-buy"
+            id="ovenBtn"
+            onclick="buyOven()"
+            disabled="true"
+          >
+            Buy Oven (25)
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function bake() {
+      	score += adding;
+      	document.getElementById(‘number’).innerHTML = score;
+      }
+    </script>
+  </body>
+</html>
